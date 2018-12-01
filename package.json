@@ -1,0 +1,19 @@
+{
+  "name": "jp_destination",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amywychan/JP_Destination.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amywychan/JP_Destination/issues"
+  },
+  "homepage": "https://github.com/amywychan/JP_Destination#readme",
+  "description": ""
+}
