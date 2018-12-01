@@ -14,24 +14,24 @@ export class DestinationsService {
   getDestinations() {
     return this
           .http
-          .get(`${this.uri}/destinations`);
+          .get(`/destinations`);
   }
 
   getDestinationsById(id){
     return this
           .http
-          .get(`${this.uri}/destinations/${id}`);
+          .get(`/destinations/${id}`);
   } 
 
   likeDestinations(id){
     return this
           .http
-          .get(`${this.uri}/destinations/like/${id}`);
+          .get(`/destinations/like/${id}`);
   } 
 
   getDestinationsByPref(pref){
     return this
           .http
-          .get(`${this.uri}/destinations/${pref}`);
+          .get(`/destinations/${pref}`);
   } 
 }
