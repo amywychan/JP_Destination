@@ -64,4 +64,4 @@ router.route('/destinations/like/:id').get((req, res) => {
 
 app.use('/', router);
 
-app.listen(4000, () => console.log('Express server running on port 4000'));
+app.listen(process.env.PORT || 8080, () => console.log('Express server running on port 4000'));
