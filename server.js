@@ -19,6 +19,15 @@ connection.once('open', () => {
     console.log('MongoDB connected');
 });
 
+router.route('/').get((req, res) => {
+    Destinations.find((err, destinations) => {
+        if (err)
+            res.json(err);
+        else
+            res.json(destinations);
+    });
+});
+
 router.route('/destinations').get((req, res) => {
     Destinations.find((err, destinations) => {
         if (err)
