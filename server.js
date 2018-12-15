@@ -64,6 +64,6 @@ router.route('/destinations/like/:id').get((req, res) => {
 
 app.use('/', router);
 
-var port = process.env.port || 4000;
-//app.listen(process.env.PORT, () => console.log('Express server is running'));
-app.listen(port, () => console.log('Express server is running'));
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
